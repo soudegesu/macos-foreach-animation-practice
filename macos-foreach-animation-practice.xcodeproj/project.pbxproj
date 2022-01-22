@@ -12,6 +12,8 @@
 		9B4E86AE279B7E1D002DE2C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B4E86AD279B7E1D002DE2C1 /* Assets.xcassets */; };
 		9B4E86B1279B7E1D002DE2C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B4E86B0279B7E1D002DE2C1 /* Preview Assets.xcassets */; };
 		9B4E86B4279B7E1D002DE2C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4E86B2279B7E1D002DE2C1 /* Main.storyboard */; };
+		9B666A09279BC29000E2213B /* StateObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B666A08279BC29000E2213B /* StateObject.swift */; };
+		9B666A0B279BC32D00E2213B /* NotificationCenter+Namespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B666A0A279BC32D00E2213B /* NotificationCenter+Namespace.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		9B4E86B3279B7E1D002DE2C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B4E86B5279B7E1D002DE2C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B4E86B6279B7E1D002DE2C1 /* macos_foreach_animation_practice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macos_foreach_animation_practice.entitlements; sourceTree = "<group>"; };
+		9B666A08279BC29000E2213B /* StateObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObject.swift; sourceTree = "<group>"; };
+		9B666A0A279BC32D00E2213B /* NotificationCenter+Namespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+Namespace.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				9B4E86A9279B7E1C002DE2C1 /* AppDelegate.swift */,
+				9B666A08279BC29000E2213B /* StateObject.swift */,
 				9B4E86AB279B7E1C002DE2C1 /* ContentView.swift */,
+				9B666A0A279BC32D00E2213B /* NotificationCenter+Namespace.swift */,
 				9B4E86AD279B7E1D002DE2C1 /* Assets.xcassets */,
 				9B4E86B2279B7E1D002DE2C1 /* Main.storyboard */,
 				9B4E86B5279B7E1D002DE2C1 /* Info.plist */,
@@ -144,6 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B666A0B279BC32D00E2213B /* NotificationCenter+Namespace.swift in Sources */,
+				9B666A09279BC29000E2213B /* StateObject.swift in Sources */,
 				9B4E86AC279B7E1C002DE2C1 /* ContentView.swift in Sources */,
 				9B4E86AA279B7E1C002DE2C1 /* AppDelegate.swift in Sources */,
 			);

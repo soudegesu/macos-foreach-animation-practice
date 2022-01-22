@@ -7,18 +7,14 @@
 
 import SwiftUI
 
-struct Obj: Identifiable {
-  var id = UUID().uuidString
-}
-
 struct ContentView: View {
   
-  @State var objs: [Obj] = []
+    @ObservedObject var state = StateObject()
   
     var body: some View {
       VStack(spacing: 30) {
         HStack {
-          ForEach(objs) { obj in
+          ForEach(state.objs) { obj in
             ZStack {
               Rectangle()
                 .background(Color.gray)
@@ -31,13 +27,13 @@ struct ContentView: View {
         }
         HStack(spacing: 10) {
           Button("add", action: {
-            withAnimation(.easeOut(duration: 0.3)) {
-              objs.append(Obj())
+            DispatchQueue.global().async {
+              NotificationCenter.default.post(name: .addItem, object: [])
             }
           })
           Button("remove", action: {
-            withAnimation(.easeIn(duration:0.3)) {
-              objs = objs.dropLast()
+            DispatchQueue.global().async {
+              NotificationCenter.default.post(name: .removeItem, object: [])
             }
           })
         }
