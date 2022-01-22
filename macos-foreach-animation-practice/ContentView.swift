@@ -31,12 +31,12 @@ struct ContentView: View {
         }
         HStack(spacing: 10) {
           Button("add", action: {
-            withAnimation {
+            withAnimation(.easeOut(duration: 0.3)) {
               objs.append(Obj())
             }
           })
           Button("remove", action: {
-            withAnimation {
+            withAnimation(.easeIn(duration:0.3)) {
               objs = objs.dropLast()
             }
           })
